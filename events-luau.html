@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Fredoka+One&family=Fredoka:wght@400;500;600;700&family=Baloo+2:wght@700;800&display=swap" rel="stylesheet">
+  <!-- Bubblegum Sans, Fredoka One, Fredoka, Baloo 2 -->
+  <style>
+    .description-events {
+      padding-left: 20px;
+    }
+    .description-events > li > h3 {
+      margin: 20px 0 0 0;
+    }
+    .description-events > li > ul {
+      padding-left: 10px;
+    }
+    .description-events > li > ul > li {
+      margin: 10px 0 5px 0;
+    }
+    .description-events > li > ul > li > div {
+      display: flex;
+    }
+    .description-events > li > ul > li > div > b {
+      max-width: 80%;
+      text-decoration: none;
+    }
+    .description-events > li > ul > li > div > b:hover {
+      text-decoration: underline;
+    }
+    .description-events > li > ul > li > div > span {
+      width: 80%;
+      margin: 0 0 0 5px;
+    }
+  </style>
+  <title>events-luau</title>
+</head>
+<body>
+  <h2>jenis-jenis event luau</h2>
+  <p>Event biasanya merujuk pada <code>RBXScriptSignal</code>. ini adalah cara sebuah objek memberi tahu script bahwa "sesuatu" telah terjadi.</p>
+  <ol class="description-events">
+    <li>
+      <h3>Players (Service)</h3>
+      <ul>
+        <li>
+          <div>
+            <b>PlayerAdded:</b>
+            <span>Menjalankan fungsi saat pemain join ke server</span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <b>PlayerRemoving:</b>
+            <span>Menjalankan fungsi saat pemain keluar dari server</span>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <h3>Player (Object)</h3>
+      <ul>
+        <li>
+          <div>
+            <b>CharacterAppearanceLoaded:</b>
+            <span>Jalan saa seluaruh aset karakter (Baju, Aksesoris) selesai dimuat.</span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <b>CharacterAdded:</b>
+            <span>Jalan saat model karakter masuk ke workspace</span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <b>CharacterRemoving:</b>
+            <span>Jalan saat karakter dihapus (Misal: saat mati atau ganti karakter)</span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <b>Chatted:</b>
+            <span>Menangkap pesan teks yg diketik pemain di chat</span>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <h3>Humanoid</h3>
+      <ul>
+        <li>
+          <div>
+            <b>Died:</b>
+            <span>Mendeteksi saat HP menjedi 0</span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <b>HealthChanged:</b>
+            <span>Jalan setiap kali HP bertambah atau berkurang</span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <b>SatateChanged:</b>
+            <span>Mendeteksi perubahan status (Misal: dari lari ke melompat / berenang)</span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <b>Climbing/FallingDown/Jumping/Running/Swimming:</b>
+            <span>Event spesifik</span>
+          </div>
+        </li>
+      </ul>
+    </li>
+  </ol>
+</body>
+</html>
